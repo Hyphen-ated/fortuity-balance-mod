@@ -227,7 +227,7 @@ CIVILIAN SECTORS
 	<event name="NEUTRAL_ZOLTAN" min="5" max="6"/>
 </sectorDescrption>
 
-<sectorDescription name="ZOLTAN_HOME" minSector="2" unique="true">  
+<sectorDescription name="♫☁" minSector="2" unique="true">  
 	<nameList>
 		<name>Zoltan Homeworlds</name>
 	</nameList>
@@ -243,14 +243,13 @@ CIVILIAN SECTORS
 		<blueprint name="rock" rarity="3"/>
 		<blueprint name="human" rarity="2"/>
 	</rarityList>
-	<startEvent>START_BEACON_ZOLTAN</startEvent>
+	<startEvent>ZOLTAN_PEACE_QUEST</startEvent>
 	<event name="ZOLTAN_CREW_STUDY" min="1" max="1"/>
-	<event name="ZOLTAN_PEACE_QUEST" min="1" max="1"/>
-	<event name="STORE_ZOLTAN" min="2" max="2"/>
-	<event name="NOTHING_ZOLTAN" min="1" max="2"/>
-	<event name="DISTRESS_BEACON_ZOLTAN" min="1" max="2"/>
+	<event name="STORE_ZOLTAN" min="1" max="1"/>
+	<event name="HOSTILE_ZOLTAN" min="3" max="3"/>
+	<event name="DISTRESS_BEACON_ZOLTAN" min="1" max="1"/>
+	<event name="NOTHING_ZOLTAN" min="100" max="100"/>
 	<event name="NEBULA_ZOLTAN" min="2" max="6"/>
-	<event name="HOSTILE_ZOLTAN" min="6" max="8"/>
 	<event name="BOARDERS_ZOLTAN" min="1" max="2"/>
 	<event name="ITEM_ZOLTAN" min="1" max="2"/>
 	<event name="QUESTS_ZOLTAN" min="0" max="1"/>

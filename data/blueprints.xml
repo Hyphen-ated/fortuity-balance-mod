@@ -1266,7 +1266,7 @@
 <weaponBlueprint name="BEAM_2">
 	<type>BEAM</type>
 	<tip>tip_beams</tip>
-	<title>Halberd Beam</title>
+	<title>Herring Beam</title>
 	<short>Halberd Beam</short>
 	<desc>Slow but reliably powerful standard beam weapon.</desc>
 	<tooltip>Beam weapon that does 2 damage per room, partially piercing up to 1 layer of shields.</tooltip>
@@ -1275,6 +1275,11 @@
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
 	<cooldown>17</cooldown>
+	<color> <!-- Color only works for beams -->
+		<r>255</r>
+		<g>0</g>
+		<b>0</b>
+	</color>
 	<power>3</power>
 	<cost>75</cost>
 	<bp>7</bp>

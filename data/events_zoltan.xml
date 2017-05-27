@@ -40,15 +40,13 @@ shield research center - jams shields
 
 
 <eventList name="HOSTILE_ZOLTAN">
-	<event load="ZOLTAN_FIGHT"/>
 	<event load="ZOLTAN_PIRATE"/>
-	<event load="ZOLTAN_MANTIS"/>
-	<event load="ZOLTAN_ENGI"/>
 	<event load="ZOLTAN_ASTEROID"/>
-	
-
+	<event load="REBEL_AUTO"/>	
+	<event load="ZOLTAN_FIGHT"/>
+	<event load="ZOLTAN_MANTIS"/>
 	<event load="REBEL"/>
-	<event load="REBEL_AUTO"/>
+	<event load="ZOLTAN_ENGI"/>
 </eventList>
 
 	
@@ -168,7 +166,7 @@ shield research center - jams shields
 	<store/>
 </event>
 <textList name="STORE_ZOLTAN">
-	<text>The Zoltan are fascinated by other species, and have set up something of an alien knick-knack shop here. Why not take a look?</text>
+	<text>The Zoltan are fascinated by other species, and have set up something of an alien shop here. Why not take a look?</text>
 	<text>A human ship hails: "My friends! Please, there is nothing I don't have, and there is nothing worth wanting that I can't get. Why not take a look around my shop?"</text>
 	<text>A Mantis crew here has hunkered down in the abdomen of a long-dead space-whale - the only way, presumably, for them to operate their black-market trade without detection. Worth a look?</text>
 	
@@ -492,7 +490,7 @@ shield research center - jams shields
 
 
 <event name="ZOLTAN_ASTEROID" unique="true">
-	<text>You arrive in an asteroid field and are greeted by a Zoltan guard, "By attempting to access these closed mining fields, you are in violation of the Natural Mineral Protection Act. Your weaponry will be confiscated for processing." You don't have time for this.</text>
+	<text>You arrive in an asteroid field and are greeted by a Zoltan guard, "By attempting to access these closed mining blocks, you are in violation of the Natural Mineral Protection Act. Your weaponry will be confiscated for processing." You don't have time for this.</text>
 	<environment type="asteroid"/>
 	<ship load="ZOLTAN_SHIP" hostile="true"/>
 </event>
@@ -774,7 +772,7 @@ shield research center - jams shields
 				<text>Continue...</text>
 				<event>
 					<text>They finish: "Please, spread the word of enlightenment to those that have not heard. Once you have, contact our brethren." They transmit coordinates of their so-called "brethren".</text>
-					<quest event="ZOLTAN_PEACE_QUEST2"/>
+					<quest event="ZOLTANPEACE_QUEST2"/>
 				</event>
 			</choice>
 		</event>
@@ -799,7 +797,7 @@ shield research center - jams shields
 	</event>
 </eventList>
 
-<event name="ZOLTAN_PEACE_QUEST2">
+<event name="ZOLTANPEACE_QUEST2">
 	<text>You arrive at the location specified by the peace-loving Zoltan, but the only thing nearby is a Rebel ship, closing in fast! "We've found you! You're not getting away this time!"</text>
 	<ship load="REBEL" hostile="false"/>
 	<choice hidden="true">
@@ -830,7 +828,7 @@ shield research center - jams shields
 							<text>Suddenly all indications of the Rebel ship fade away and a Zoltan fleet appears around your ship. The captain of the ship you met previously materializes on your bridge.</text>
 							<choice hidden="true">
 								<text>Continue...</text>
-								<event load="ZOLTAN_PEACE_QUEST_REWARD"/>
+								<event load="ZOLTANPEACE_QUEST_REWARD"/>
 							</choice>
 						</event>
 					</choice>
@@ -853,18 +851,12 @@ shield research center - jams shields
 		</event>
 	</choice>
 </event>
-<eventList name="ZOLTAN_PEACE_QUEST_REWARD"><!--DLC2 DLC3-->
-	<event>
-		<text>"Although your methods are crude and most certainly ineffective, it is clear you took our previous meeting to heart. If your ship represents the Federation's willingness to adapt we shall do what we can to aid in their fight. This technology should aid your quest."</text>
-		<unlockShip id="7">A Zoltan cruiser has been unlocked and added to the hangar!</unlockShip>
-		<autoReward level="LOW">scrap_only</autoReward>
-		<augment name="ENERGY_SHIELD"/>
-	</event>
+<eventList name="ZOLTANPEACE_QUEST_REWARD"><!--DLC2 DLC3-->
 	<event>
 		<text>"Although your methods are crude and most certainly ineffective, it is clear you took our previous meeting to heart. If your ship represents the Federation's willingness to adapt we shall do what we can to aid in their fight. I will personally assist."</text>
 		<autoReward level="HIGH">standard</autoReward>
-		<unlockShip id="7">A Zoltan cruiser has been unlocked and added to the hangar!</unlockShip>
-		<crewMember amount="1" class="energy" all_skills="2">Envoy</crewMember>
+		<unlockShip id="7">A Zoltancruiser has been unlocked and added to the hangar!</unlockShip>
+		<crewMember amount="1" class="zoltan">Envoy</crewMember>
 	</event>
 </eventList>
 	

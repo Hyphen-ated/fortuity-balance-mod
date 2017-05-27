@@ -137,7 +137,8 @@
 	<event load="ITEMS"/>
 </eventList>
 
-<eventList name="NEUTRAL_EXIT">  
+<eventList name="NEUTRAL_EXIT">
+	<event load="DONOR_PONY"/>
 	<event load="PIRATE_CIVILIAN"/>
 	<event load="REBEL_TRANSPORT"/>
 	<event load="AUTO_REFUEL_STATION"/>
@@ -145,7 +146,6 @@
 	<event load="FRIENDLY_SLAVER"/>
 	<event load="PIRATE_BRIBER"/>
 	<event load="AUTO_DEFENSE_ITEM"/> 
-	<event load="DONOR_PONY"/>
 	<event load="DONOR_PLAGUE"/>
 	
 	<event load="TRADER_UPGRADES"/> <!--DLC - down below-->
