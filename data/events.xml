@@ -1015,7 +1015,7 @@ item - scrap + that thing  -->
 		<choice req="BOMB_HEAL"> <!--DLC!-->
 			<text>(Healing Burst) Use a healing bomb to keep them alive.</text>
 			<event>
-				<text>You launch a healing bomb into their ship and the Nanobots are able to keep the crew stabilized. Once they come to, you send over some supplies to keep them healty enough to get to friendly territory.</text>
+				<text>You launch a healing bomb into their ship and the Nanobots are able to keep the crew stabilized. Once they come to, you send over some supplies to keep them healthy enough to get to friendly territory.</text>
 				<item_modify>
 					<item type="missiles" min="-1" max="-1"/>
 				</item_modify>
@@ -2097,7 +2097,7 @@ item - scrap + that thing  -->
 
 <event name="MERCHANT_REQUEST" unique="true">
 	<img planet="PLANET_POPULATED_SMALL"/>
-	<text>You arrive at a populated sector. One merchant seems to be mass-broadcasting a request for a mercenary ship to aid him. Shall we respond?</text>
+	<text>You arrive at a populated beacon. One merchant seems to be mass-broadcasting a request for a mercenary ship to aid him. Shall we respond?</text>
 	<choice hidden="true">
 		<text>Yes.</text>
 		<event load="MERCHANT_REQUEST_LIST"/>
@@ -2739,7 +2739,7 @@ item - scrap + that thing  -->
 		<text>Accept their offer.</text>
 		<event>
 			<ship hostile="false"/>
-			<autoReward level="RANDOM">scrap</autoReward>
+			<autoReward level="RANDOM">stuff</autoReward>
 		</event>
 	</choice>
 	<choice>
@@ -3033,7 +3033,7 @@ item - scrap + that thing  -->
 			<autoReward level="LOW">stuff</autoReward>
 		</event>
 	</choice>
-	<choice hidden="false" req="STASIS_POD">
+	<choice hidden="true" req="STASIS_POD">
 		<text>(Damaged Stasis Pod) Ask if they can fix this.</text>
 		<event>
 			<text>"Interesting. I've never seen a cryogenic system like this. It appears to still be functioning..." They hook it up to their system and run a number of tests on it.</text>
@@ -3240,7 +3240,7 @@ item - scrap + that thing  -->
 </event>
 <eventList name="DONOR_PONY_PEACE">
 	<event>
-		<text>None of your attempts to communicate seem to work: they just stare at you silently. As you prepare to leave, one of the creatures gallops forward and forcefully nudges you away from the ship. He seems to want you to follow him. Eventually, they guide you to an old Engi ship's crash site. Inside you are able to find and reactivate an Engi!</text>
+		<text>None of your attempts to communicate seem to work: they just stare at you silently. As you prepare to leave, one of the creatures canters forward and forcefully nudges you away from the ship. He seems to want you to follow him. Eventually, they guide you to an old Engi ship's crash site. Inside you are able to find and reactivate an Engi!</text>
 		<crewMember amount="1" class="engi"/>
 		<autoReward level="LOW">standard</autoReward>
 	</event>

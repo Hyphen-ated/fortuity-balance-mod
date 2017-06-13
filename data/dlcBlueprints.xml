@@ -252,7 +252,7 @@
 		<level>50</level> <!-- level 2 -->
 		<level>55</level> <!-- level 3 -->
 	</upgradeCost>
-	<cost>100</cost>
+	<cost>110</cost>
 </systemBlueprint>
 
 <systemBlueprint name="battery">
@@ -917,7 +917,7 @@
 <weaponBlueprint name="LASER_CHARGEGUN_PLAYER"> 
 	<type>LASER</type>
 	<title>Laser Charger</title>
-	<short>Charge L+</short>
+	<short>Charge+</short>
 	<tip>tip_charge</tip>
 	<desc>This laser weapon can charge two times, giving it an additional projectile. This improved version only requires 1 power.</desc>
 	<tooltip>Fires more shots the more it charges, up to a max of 2.</tooltip>
@@ -957,7 +957,7 @@
 <weaponBlueprint name="LASER_CHARGEGUN"> 
 	<type>LASER</type>
 	<title>Laser Charger</title>
-	<short>L. Charge I</short>
+	<short>Charge I</short>
 	<tip>tip_charge</tip>
 	<desc>This laser weapon can charge two times, giving it an additional projectile.</desc>
 	<tooltip>Fires more shots the more it charges, up to a max of 2.</tooltip>
@@ -998,7 +998,7 @@
 <weaponBlueprint name="LASER_CHARGEGUN_2"> 
 	<type>LASER</type>
 	<title>Laser Charger II</title>
-	<short>L. Charge II</short>
+	<short>Charge II</short>
 	<tip>tip_charge</tip>
 	<desc>This laser weapon can charge multiple times, giving it additional projectiles.</desc>
 	<tooltip>Fires more shots the more it charges, up to a max of 4.</tooltip>

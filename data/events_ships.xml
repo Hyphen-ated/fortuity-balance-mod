@@ -1283,11 +1283,11 @@ Special:
 
 <ship name="ZOLTAN_SHIP_SAVE_MANTIS1" auto_blueprint="SHIPS_ZOLTAN">
 	<destroyed>
-		<text>The Mantis are so grateful that they only take two thirds of the loot, leaving the rest for you. How civilized.</text>
+		<text>The Mantis are so grateful that they only take three quarters of the loot, leaving the rest for you. How civilized.</text>
 		<autoReward level="LOW">standard</autoReward>
 	</destroyed>
 	<deadCrew>
-		<text>The Mantis are so grateful that they only take two thirds of the loot, leaving the rest for you. How civilized.</text>
+		<text>The Mantis are so grateful that they only take three quarters of the loot, leaving the rest for you. How civilized.</text>
 		<autoReward level="MED">standard</autoReward>
 	</deadCrew>
 </ship>

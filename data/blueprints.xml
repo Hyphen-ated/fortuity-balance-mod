@@ -233,8 +233,8 @@
 	<rarity>1</rarity>
 	<upgradeCost>
 		<level>25</level> <!-- level 2 -->
-		<level>40</level> <!-- level 3 -->
-		<level>50</level> <!-- imaginary level 4 -->
+		<level>35</level> <!-- level 3 -->
+		<level>40</level> <!-- imaginary level 4 -->
 	</upgradeCost>
 	<cost>0</cost>
 </systemBlueprint>
@@ -248,7 +248,7 @@
 	<rarity>1</rarity>
 	<upgradeCost>
 		<level>30</level> <!-- level 2 -->
-		<level>55</level> <!-- level 3 -->
+		<level>50</level> <!-- level 3 -->
 	</upgradeCost>
 	<cost>80</cost>
 	<locked>1</locked>
@@ -263,9 +263,9 @@
 	<rarity>1</rarity>
 	<upgradeCost>
 		<level>30</level> <!-- level 2 -->
-		<level>50</level> <!-- level 3 -->
+		<level>40</level> <!-- level 3 -->
 	</upgradeCost>
-	<cost>150</cost>
+	<cost>160</cost>
 	<locked>1</locked>
 </systemBlueprint>
 
@@ -309,9 +309,9 @@
 		<level>100</level> <!-- level 2 -->
 		<level>20</level> <!-- level 3 -->
 		<level>30</level> <!-- level 4 -->
-		<level>40</level> <!-- level 5 -->
-		<level>60</level> <!-- level 6 -->
-		<level>80</level> <!-- level 7 -->
+		<level>35</level> <!-- level 5 -->
+		<level>70</level> <!-- level 6 -->
+		<level>75</level> <!-- level 7 -->
 		<level>100</level> <!-- level 8 -->
 		<level>120</level> <!-- Imaginary level 9 -->
 	</upgradeCost>
@@ -345,10 +345,10 @@
 		<level>15</level> <!-- level 3 -->
 		<level>30</level> <!-- level 4 -->
 		<level>45</level> <!-- level 5 -->
-		<level>60</level> <!-- level 6 -->
+		<level>55</level> <!-- level 6 -->
 		<level>70</level> <!-- level 7 -->
-		<level>100</level> <!-- level 8 -->
-		<level>120</level> <!-- Imaginary level 9 -->
+		<level>90</level> <!-- level 8 -->
+		<level>100</level> <!-- Imaginary level 9 -->
 	</upgradeCost>
 	<cost>1</cost>
 </systemBlueprint>
@@ -418,7 +418,7 @@
 		<level>35</level> <!-- level 2 -->
 		<level>45</level> <!-- level 3 -->
 	</upgradeCost>
-	<cost>35</cost>
+	<cost>30</cost>
 </systemBlueprint>
 
 
@@ -1266,7 +1266,7 @@
 <weaponBlueprint name="BEAM_2">
 	<type>BEAM</type>
 	<tip>tip_beams</tip>
-	<title>Herring Beam</title>
+	<title>Halberd Beam</title>
 	<short>Halberd Beam</short>
 	<desc>Slow but reliably powerful standard beam weapon.</desc>
 	<tooltip>Beam weapon that does 2 damage per room, partially piercing up to 1 layer of shields.</tooltip>
@@ -1274,16 +1274,11 @@
 	<sp>0</sp>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>17</cooldown>
-	<color> <!-- Color only works for beams -->
-		<r>255</r>
-		<g>0</g>
-		<b>0</b>
-	</color>
+	<cooldown>18</cooldown>
 	<power>3</power>
 	<cost>75</cost>
 	<bp>7</bp>
-	<rarity>2</rarity>
+	<rarity>3</rarity>
 	<length>82</length>
 	<image>beam_contact</image>
 	<launchSounds>
@@ -1766,7 +1761,7 @@
 	<breachChance>10</breachChance>
 	<cooldown>17</cooldown>
 	<power>2</power>
-	<cost>65</cost>
+	<cost>60</cost>
 	<bp>4</bp>
 	<rarity>4</rarity>
 	<image>bomb_breach</image>
@@ -2371,7 +2366,7 @@
 	<cooldown>1000</cooldown> <!--- Doesn't effect repair drone -->
 	<dodge>0</dodge>
 	<speed>20</speed> <!--- Change this to increase/decrease firing speed -->
-	<cost>105</cost> 
+	<cost>110</cost> 
 	<bp>5</bp>
 	<droneImage>drone_shiprepair</droneImage>
 	<image>weapons/laser_light2_strip4.png</image>
@@ -2689,7 +2684,7 @@
 <augBlueprint name="ADV_SCANNERS">
 	<title>Long-Ranged Scanners</title>
 	<desc>Adds additional info about nearby beacons on the star map.</desc>
-	<cost>40</cost>
+	<cost>45</cost>
 	<bp>3</bp>
 	<rarity>1</rarity>
 	<stackable>false</stackable>
@@ -2698,7 +2693,7 @@
 <augBlueprint name="AUTO_COOLDOWN">
 	<title>Automated Reloader</title>
 	<desc>The cooldown of all your weapons is reduced by 10 percent.</desc>
-	<cost>40</cost>
+	<cost>45</cost>
 	<bp>5</bp>
 	<rarity>2</rarity>
 	<stackable>true</stackable>
