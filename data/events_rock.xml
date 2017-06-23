@@ -918,6 +918,7 @@ unlock - Asked to prove the federation is worth of rock fighters - follow him to
 				<text>Continue...</text>
 				<event>
 					<text>"Now that that's taken care of, let us patch up your hull. Maybe we can improve its armor plating while we're at it."</text>
+					<autoReward level="MED">standard</autoReward>
 					<augment name="ROCK_ARMOR"/>
 					<damage amount="-29"/>
 				</event>

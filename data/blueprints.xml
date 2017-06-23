@@ -1644,7 +1644,7 @@
 	<stunChance>1</stunChance>
 	<cooldown>4</cooldown>
 	<power>3</power>
-	<cost>65</cost>
+	<cost>60</cost>
 	<bp>6</bp>
 	<rarity>4</rarity>
 	<image>ion_1_shot</image>
@@ -2404,7 +2404,7 @@
 	<short>Defense II</short>
 	<desc>Shoots down all types of incoming projectiles and fires faster than Mark I.</desc>
 	<power>3</power>
-	<cooldown>850</cooldown> <!--- Shooting cooldown for shooting at asteroids/missiles, in ms -->
+	<cooldown>820</cooldown> <!--- Shooting cooldown for shooting at asteroids/missiles, in ms -->
 	<dodge>0</dodge>
 	<speed>7</speed> <!--- Superficial change.. just makes it fly faster -->
 	<cost>55</cost> 

@@ -2,7 +2,7 @@
   <title><![CDATA[ Twinge's Balance & Bugfix Mod ]]></title>
   <threadUrl><![CDATA[ http://www.ftlgame.com/forum/viewtopic.php?f=11&t=26269 ]]></threadUrl>
   <author><![CDATA[ Twinge ]]></author>
-  <version><![CDATA[ 2.6.1 ]]></version>
+  <version><![CDATA[ 2.6.3 ]]></version>
   <description>
 <![CDATA[
 
@@ -14,7 +14,7 @@ Full change list: http://www.it-is-law.com/ftl-balance/index.php?title=Main_Page
 * Stealth C's Shield+ Drone now requires 1 power; Engi B starts with Level 3 Piloting and Heavy Ion is buffed; Rock A starts with Explosive Replicator (with fewer missiles) and Hull Missile is buffed; Fed C starts with Repair Burst; Stealth B starts with Titanium System Casing.
 * Kestrel C has been remade in an effort to make it a unique experience compared to other ships.
 * Most augments improved or made cheaper. Adv. FTL Navigation removed from game. Long-Ranged Scanners & Reloaders cost more.
-* Shield Drones now require 2 power and cost less. Fire Drone slightly weaker but only requires 2 power. Beam II and Anti-Combat Drones have been buffed slightly. Defense II and Combat II cheaper.
+* Shield Drones now require 2 power and cost less. Fire Drone slightly weaker but only requires 2 power. Beam II and Anti-Combat Drones have been buffed slightly and are more common. Defense II and Combat II cheaper.
 * System Pricing: Hacking much more expensive, Cloaking more expensive, Teleporters slightly cheaper. Many systems cheaper at the highest levels (including Engines). Cheaper to switch Medbay and Clone Bay.
 * The Rebel Flagship now only has Level 2 Mind Control and Hacking when playing on Easy difficulty.
 * Reduced the odds of free crew from events slightly and tweaked many event scrap gains up or down appropriately.

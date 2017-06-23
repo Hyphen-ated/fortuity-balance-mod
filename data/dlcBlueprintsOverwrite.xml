@@ -700,7 +700,7 @@ This doc is for alterate versions of the existing ships - outfitted with the new
 		<shields power="2" max="8" room="6"/> <!--6-->
 		<engines power="2" max="5" room="7"/> <!--7-->
 		<weapons power="2" max="8" room="5"/> <!--5-->
-		<cloaking power="1" max="2" room="4" start="false"/> <!--4-->
+		<cloaking power="1" max="1" room="4" start="false"/> <!--4-->
 		<teleporter power="1" max="2" room="8" start="false"/> <!--8-->
 	</systemList>
 	<weaponList missiles="10" load="WEAPONS_ROCK"/>
@@ -974,7 +974,7 @@ Overwritten player ships!
  <!--- ALT Kestrel -->
 <shipBlueprint name="PLAYER_SHIP_HARD_3" layout="kestral_3" img="kestral_3">
 	<class>Kestrel Cruiser</class>
-	<name>The Swallow</name>
+	<name>The Loon</name>
 	<desc>This model was modified by pirates and is quick to escape when a fight goes sour.</desc>
 	<unlock>Get to Sector 8 with the Kestrel Cruiser Type B and Advanced Mode enabled to unlock this ship.</unlock>
 	<systemList>

@@ -722,7 +722,7 @@
 	<weaponList missiles="10" load="WEAPONS_ROCK"/>
 	<health amount="12"/>	
 	<maxPower amount ="12"/>
-	<crewCount amount = "4" max="5" class="rock"/>
+	<crewCount amount = "4" max="6" class="rock"/>
 	<boardingAI>sabotage</boardingAI>
 	<aug name="ROCK_ARMOR"/>
 	<cloakImage>rock_assault</cloakImage>

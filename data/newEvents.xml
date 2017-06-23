@@ -1871,7 +1871,7 @@ PIRATE_SALESMAN
 <event name="DOCK_DRONE_SALESMAN">
 	<text>A human in an exquisite suit meets you on board. "Welcome to my ship! We specialize in drones of all kinds, can I interest you in any?"</text>
 	<choice>
-		<text>Buy some Drone parts.</text>
+		<text>Buy some drone parts.</text>
 		<event>
 			<item_modify>
 				<item type="scrap" min="-25" max="-25"/>
@@ -1880,7 +1880,7 @@ PIRATE_SALESMAN
 		</event>
 	</choice>
 	<choice>
-		<text>Buy a Drone schematic.</text>
+		<text>Buy a drone schematic.</text>
 		<event>
 			<item_modify>
 				<item type="scrap" min="-35" max="-25"/>
@@ -1890,7 +1890,7 @@ PIRATE_SALESMAN
 	</choice>
 	<!-- MATT TODO -- make this work? -->
 	<choice req="drones" max_lvl="3" max_group="0" blue="false"> 
-		<text>Buy a Drone system upgrade.</text>
+		<text>Buy a Drone System upgrade.</text>
 		<event>
 			<item_modify>
 				<item type="scrap" min="-20" max="-15"/>
@@ -1899,7 +1899,7 @@ PIRATE_SALESMAN
 		</event>
 	</choice>
 	<choice req="drones" min_level="4" max_lvl="5" max_group="0" blue="false"> 
-		<text>Buy a Drone system upgrade.</text>
+		<text>Buy a Drone System upgrade.</text>
 		<event>
 			<item_modify>
 				<item type="scrap" min="-33" max="-25"/>
@@ -1908,7 +1908,7 @@ PIRATE_SALESMAN
 		</event>
 	</choice>
 	<choice req="drones" min_level="6" max_lvl="7" max_group="0" blue="false"> 
-		<text>Buy a Drone system upgrade.</text>
+		<text>Buy a Drone System upgrade.</text>
 		<event>
 			<item_modify>
 				<item type="scrap" min="-65" max="-50"/>

@@ -154,7 +154,7 @@
 <augBlueprint name="DEFENSE_SCRAMBLER"> 
 	<title>Defense Scrambler</title>
 	<desc>Prevents enemy Defense and Anti-Combat Drones from targeting anything.</desc>
-	<cost>55</cost>
+	<cost>50</cost>
 	<bp>8</bp>
 	<rarity>4</rarity>
 	<stackable>false</stackable>
@@ -244,7 +244,7 @@
 <systemBlueprint name="hacking">
 	<type>hacking</type>
 	<title>Hacking</title>
-	<desc>Targets a single system, locking its doors and granting the ability to temporarily disable or disrupt it. Requires drone part to launch.</desc>
+	<desc>Targets a system locking its doors, halving repair speed, and granting the ability to temporarily disable or disrupt it. Requires drone part to launch.</desc>
 	<startPower>1</startPower>
 	<maxPower>3</maxPower>
 	<rarity>1</rarity>
@@ -1144,7 +1144,7 @@
 	<sp>0</sp>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>17</cooldown>
+	<cooldown>16</cooldown>
 	<power>1</power>
 	<cost>35</cost>
 	<bp>4</bp>
