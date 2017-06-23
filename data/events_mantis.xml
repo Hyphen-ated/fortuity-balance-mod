@@ -427,6 +427,11 @@ Special
 		<text>Pry it open.</text>
 		<event load="MANTIS_CREW_LIST"/>
 	</choice>
+	<choice hidden="true" req="LIFE_SCANNER">
+		<text>(Lifeform Scanner) Check the pod for life.</text>
+		<event load="MANTIS_CREW_LIST_SCAN"/>
+	</choice>
+	
 </event>
 <eventList name="MANTIS_CREW_LIST">	
 	<event>
@@ -447,6 +452,46 @@ Special
 	</event>
 </eventList>
 
+<eventList name="MANTIS_CREW_LIST_SCAN">	
+	<event>
+		<text>You're surprised to detect a human inside. You pry open the pod and they burst out in a panic, screaming - a rare survivor of Mantis captivity. Once calm, the survivor offers to join your crew.</text>
+		<crewMember amount="1" class="human"/>
+	</event>
+	<event>
+		<text>You detect a live Mantis inside. Mantis are not known for their gratefulness; you consider how to proceed.</text>
+		<choice>
+			<text>Jettison the pod.</text>
+			<event>
+				<text>You send the pod back out the airlock - it's not worth the risk.</text>
+			</event>
+		</choice>
+		<choice hidden="true">
+			<text>Pry it open anyway.</text>
+			<event load="MANTIS_CREW_LIST_SCAN_MANT"/>
+		</choice>
+	</event>
+</eventList>
+
+<eventList name="MANTIS_CREW_LIST_SCAN_MANT">
+	<event>
+		<text>The Mantis inside is FURIOUS. He cuts the closest person in half with a single swipe. Kill it before anyone else is hurt.</text>
+		<boarders min="1" max="1" class="mantis"/>
+		<removeCrew>
+			<clone>true</clone>
+			<text>The Mantis is shocked to see the crewmember it just slaughtered step out of the Clone Bay.</text>
+		</removeCrew>
+	</event>
+	<event>
+		<text>The Mantis inside considers you a messenger from the god of mercy and demands to join your crew.</text>
+		<crewMember amount="1" class="mantis"/>
+	</event>
+	<event>
+		<text>The Mantis inside considers you a messenger from the god of mercy and demands to join your crew.</text>
+		<crewMember amount="1" class="mantis"/>
+	</event>
+</eventList>
+
+	
 <!-----------
 		ENVIRONMENT!!!
 	Events with unique environments
@@ -571,6 +616,61 @@ Special
 	<choice hidden="true" req="sensors" lvl="3">
 		<text>(Advanced Sensors) Quickly scan their ship for survivors.</text>
 		<event>
+			<text>You detect KazaaakplethKilik slumped in a corner dying.</text>
+			<choice hidden="true">
+				<text>Let him die.</text>
+				<event>
+					<text>Thus ends the life of the famed captain, KazaaakplethKilik... You wonder what secrets went with him to the grave as you thoroughly loot his ship.</text>
+					<autoReward level="HIGH">standard</autoReward>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Dock and try to speak with him.</text>
+				<event>
+					<text>In his dying moments he gives up the location of his secret stash. You strip the ship wondering what other secrets went with him to the grave.</text>
+					<quest event="MANTIS_NAMED_THIEF_STASH"/>
+					<autoReward level="HIGH">standard</autoReward>
+				</event>
+			</choice>
+			<choice hidden="true" req="medbay" lvl="2">
+				<text>(Improved Medbay) Dock and quickly take him back to the medbay.</text>
+				<event>
+					<text>Your haste has paid off and you are able to bring him back from the brink of death. When his senses return he says, "I never thought I would see this day, but... I am willing to devote myself and my ships to your cause."</text>
+					<choice hidden="true">  <!-- NOTE - Add other options?-->
+						<text>Accept.</text>
+						<event>
+							<text>KazaaakplethKilik joins your crew, offers the coordinates for a nearby stash of stolen military goods and transmits the coordinates for a custom cruiser he has been working on. You forward it to the Federation, sure they can make good use of it.</text>
+							<augment name="CREW_STIMS"/>
+							<autoReward level="HIGH">scrap_only</autoReward>
+							<crewMember amount="1" class="mantis" all_skills="2">Kazaaak</crewMember>  <!-- NOTE - Make him a special unique character/color? -->
+							<quest event="MANTIS_NAMED_THIEF_STASH"/>
+							<unlockShip id="2">A Mantis cruiser has been unlocked and added to the hangar!</unlockShip>
+						</event>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="clonebay" lvl="2">
+				<text>(Improved Clone Bay) Quickly configure the clone bay to save him.</text>
+				<event>
+					<text>Your haste has paid off and you register him into the Clonebay's database. After he passes away he is quickly reconstructed on board your ship. When his senses return he says, "I never thought I would see this day, but... I am willing to devote myself and my ships to your cause."</text>
+					<choice hidden="true">  <!-- NOTE - Add other options?-->
+						<text>Accept.</text>
+						<event>
+							<text>KazaaakplethKilik joins your crew, offers the coordinates for a nearby stash of stolen military goods and transmits the coordinates for a custom cruiser he has been working on. You forward it to the Federation, sure they can make good use of it.</text>
+							<augment name="CREW_STIMS"/>
+							<autoReward level="HIGH">scrap_only</autoReward>
+							<crewMember amount="1" class="mantis" all_skills="2">Kazaaak</crewMember>  <!-- NOTE - Make him a special unique character/color? -->
+							<quest event="MANTIS_NAMED_THIEF_STASH"/>
+							<unlockShip id="2">A Mantis cruiser has been unlocked and added to the hangar!</unlockShip>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="LIFE_SCANNER">
+		<text>(Lifeform Scanner) Check the ship for signs of life.</text>
+				<event>
 			<text>You detect KazaaakplethKilik slumped in a corner dying.</text>
 			<choice hidden="true">
 				<text>Let him die.</text>

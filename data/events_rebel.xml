@@ -42,6 +42,8 @@ Environmnt:
 	<event load="AUTO_ASTEROID"/>
 	<event load="AUTO_WARNING"/>
 	<event load="SQUAT_WARNING"/>
+	<event load="AUTO_HACKER"/>
+	
 </eventList>
 
 
@@ -158,7 +160,7 @@ Environmnt:
 <textList name="REBEL_AUTO">
 	<text>You discover one of the Rebel's autonomous scouts. The ship's AI wastes no time in engaging your ship.</text>
 	<text>Your ship is hailed: "This is an automated message. Resisting our takeover is pointless. Prepare to die." It appears this Rebel ship is run by an AI.</text>
-	<text>A Rebel autonomous scout is exploring this beacon. You attempt to hide behind a nearby battlestation, but the ship finds you and begins its assault.</text>
+	<text>A Rebel autonomous scout is exploring this beacon. You attempt to hide behind a nearby moon, but the ship finds you and begins its assault.</text>
 	<text>The AI of a nearby small Rebel scout immediately identifies you as a threat and engages.</text>
 	<text>A Rebel ship moves in to engage. You attempt to open communications, but realize the futility of that action when you see the ship is run by an AI.</text>
 	<text>This must be one of the Rebels' unmanned scout ships. Looks like there's no way around a fight.</text>
@@ -173,7 +175,7 @@ Environmnt:
 	<choice>
 		<text>Continue...</text>
 		<event>	
-			<status type="divide" target="player" system="shields" amount="2"/>
+			<status type="loss" target="player" system="shields" amount="1"/>
 		</event>
 	</choice>
 	<choice hidden="true" req="hacking"> <!-- CHANGED - added -->

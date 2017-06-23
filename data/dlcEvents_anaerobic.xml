@@ -546,7 +546,7 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 </event>
 <eventList name="LANIUS_RESEARCHER_CONTACT_LIST">
 	<event>
-		<text>"There should be some extra junk metal in some cargo bay..." You thank them once they transfer the scrap and prepare to move on.</text>
+		<text>"There should be some extra junk metal in the cargo bay..." You thank them once they transfer the scrap and prepare to move on.</text>
 		<autoReward level="MED">scrap_only</autoReward>
 	</event>
 	<event>
@@ -584,11 +584,11 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 		<event>
 			<text>They respond, "We haven't the foggiest idea how it works. They appear to meld part of their bodies into the metal and reshape it. They have been willing to demonstrate their ability if you have some extra metal that you would like converted into something.</text>
 			<choice hidden="true">
-				<text>Give 35 scrap to craft an augmentation.</text>  
+				<text>Give 30 scrap to craft an augmentation.</text>  
 				<event>
 					<text>You transfer over the scrap and watch the master craftsmen work. They easily reshape the metal into pieces they can use and then add various additional materials on their ship to construct the augmentation. You thank them and load it onto your ship.</text>
 					<item_modify>
-						<item type="scrap" min="-35" max="-35"/>
+						<item type="scrap" min="-30" max="-30"/>
 					</item_modify>
 					<augment name="DLC_AUGMENTS"/>
 				</event>
@@ -624,11 +624,11 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 				<event>
 					<text>Your crewmember offers to aid in the process to speed it along. They think it can be performed a bit more efficiently with the extra help and request less scrap.</text>
 					<choice hidden="true">
-						<text>Give 25 scrap to craft an augmentation.</text>  
+						<text>Give 20 scrap to craft an augmentation.</text>  
 						<event>
 							<text>You transfer over the scrap and watch the master craftsmen work. They easily reshape the metal into pieces they can use and then add various additional materials on their ship to construct the augmentation. You thank them and load it onto your ship.</text>
 							<item_modify>
-								<item type="scrap" min="-25" max="-25"/>
+								<item type="scrap" min="-20" max="-20"/>
 							</item_modify>
 							<augment name="DLC_AUGMENTS"/>
 						</event>
@@ -746,15 +746,15 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 	<event>
 		<text>After the exchange is complete they leave without a word.</text>
 		<item_modify>
-			<item type="fuel" min="-7" max="-3"/>
-			<item type="scrap" min="15" max="30"/>
+			<item type="fuel" min="-6" max="-3"/>
+			<item type="scrap" min="17" max="33"/>
 		</item_modify>
 	</event>
 	<event>
 		<text>After the exchange is complete they leave without a word.</text>
 		<item_modify>
-			<item type="missiles" min="-7" max="-3"/>
-			<item type="scrap" min="20" max="40"/>
+			<item type="missiles" min="-8" max="-4"/>
+			<item type="scrap" min="19" max="39"/>
 		</item_modify>
 	</event>
 	<event>
@@ -769,15 +769,15 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 	<event>
 		<text>After the exchange is complete they leave without a word.</text>
 		<item_modify>
-			<item type="fuel" min="-7" max="-3"/>
-			<item type="scrap" min="20" max="35"/>
+			<item type="fuel" min="-6" max="-3"/>
+			<item type="scrap" min="22" max="36"/>
 		</item_modify>
 	</event>
 	<event>
 		<text>After the exchange is complete they leave without a word.</text>
 		<item_modify>
-			<item type="missiles" min="-7" max="-3"/>
-			<item type="scrap" min="25" max="50"/>
+			<item type="missiles" min="-7" max="-4"/>
+			<item type="scrap" min="26" max="47"/>
 		</item_modify>
 	</event>
 	<event>
@@ -898,7 +898,7 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 		</event>
 	</choice>
 	<choice req="pilot" lvl="2" hidden="true" max_group="0">
-		<text>*(Improved Piloting) Engage the auto-pilot and safely harvest the debris.</text>
+		<text>(Improved Piloting) Engage the auto-pilot and safely harvest the debris.</text>
 		<event>
 			<text>With help from the computer, you are able to keep a comfortable distance between you and the Lanius ship, and you are able to gather resources from the debris field without conflict.</text>
 			<autoReward level="MED">standard</autoReward>
@@ -1210,7 +1210,7 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 		<event load="LANIUS_BEACON_EATER_ASK"/>
 	</choice>
 	<choice hidden="true">
-		<text>Send them 30 scrap.</text>
+		<text>Send them 15 scrap.</text>
 		<event load="LANIUS_BEACON_EATER_SCRAP"/>		
 	</choice>
 	<choice hidden="true">
@@ -1222,31 +1222,31 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 		<event>
 			<text>After a time you are told they were damaged and unable to repair their ship due to a lack of metal. They offer to exchange a piece of their ship's equipment for some scrap or other useful materials.</text>
 			<choice hidden="true">
-				<text>Give them 30 scrap.</text>
+				<text>Give them 20 scrap.</text>
 				<event>
 					<text>You release the material out of the airlock and the Lanius quickly collect it and start melting it down. They are grateful for your assistance and send over a ship augmentation.</text>
 					<augment name="RANDOM"/>
 					<item_modify>    
-						<item type="scrap" min="-30" max="-30"/>
+						<item type="scrap" min="-20" max="-20"/>
 					</item_modify>	
 				</event>
 			</choice>
 			<choice hidden="true">
-				<text>Give them 6 missiles.</text>
+				<text>Give them 5 missiles.</text>
 				<event>
 					<text>You release the material out of the airlock and the Lanius quickly collect it and start melting it down. They are grateful for your assistance and send over a ship augmentation.</text>
 					<item_modify>    
-						<item type="missiles" min="-6" max="-6"/>
+						<item type="missiles" min="-5" max="-5"/>
 					</item_modify>	
 					<augment name="RANDOM"/>
 				</event>
 			</choice>
 			<choice hidden="true">
-				<text>Give them 6 drone parts.</text>
+				<text>Give them 5 drone parts.</text>
 				<event>
 					<text>You release the material out of the airlock and the Lanius quickly collect it and start melting it down. They are grateful for your assistance and send over a ship augmentation.</text>
 					<item_modify>    
-						<item type="drones" min="-6" max="-6"/>
+						<item type="drones" min="-5" max="-5"/>
 					</item_modify>	
 					<augment name="RANDOM"/>
 				</event>
@@ -1270,11 +1270,11 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 	<event>
 		<text>After a long message the translator is only able to spurt out "critical... must... metal..." You can only surmise they are desperate for scrap.</text>
 		<choice hidden="true">
-			<text>Give them 30 scrap.</text>
+			<text>Give them 20 scrap.</text>
 			<event>
 				<text>You release the material out of the airlock and the Lanius quickly collect it and start melting it down. They are grateful for your assistance and send over a ship augmentation.</text>
 				<item_modify>    
-					<item type="scrap" min="-30" max="-30"/>
+					<item type="scrap" min="-20" max="-20"/>
 				</item_modify>	
 				<augment name="RANDOM"/>
 			</event>
@@ -1293,14 +1293,21 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 	<event>
 		<text>You release the material out of the airlock and the Lanius quickly collect it and start melting it down. They are grateful for your assistance and send over a ship augmentation.</text>
 		<item_modify>    
-			<item type="scrap" min="-30" max="-30"/>
+			<item type="scrap" min="-15" max="-15"/>
+		</item_modify>	
+		<augment name="RANDOM"/>
+	</event>
+	<event>
+		<text>You release the material out of the airlock and the Lanius quickly collect it and start melting it down. They are grateful for your assistance and send over a ship augmentation.</text>
+		<item_modify>    
+			<item type="scrap" min="-15" max="-15"/>
 		</item_modify>	
 		<augment name="RANDOM"/>
 	</event>
 	<event>
 		<text>You release the scrap out of the airlock and they greedily collect it. Shortly afterwards their impulse engines flicker on and they power up their weapons. It appears you haven't sated their lust for metal!</text>
 		<item_modify>    
-			<item type="scrap" min="-30" max="-30"/>
+			<item type="scrap" min="-15" max="-15"/>
 		</item_modify>	
 		<ship hostile="true"/>
 	</event>
@@ -1316,7 +1323,7 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 		<text>You prepare to jump as soon as possible. You don't want to be around if they disable this beacon.</text>
 	</event>
 	<event>
-		<text>You make preparations to jump but are surprised when the Lanius ship pulls away from the beacon towards you. It appears to be fully operational!</text>
+		<text>You make preparations to jump but are surprised when the Lanius ship pulls away from the beacon towards you. It appears to be more interested in your ship than the beacon!</text>
 		<ship hostile="true"/>
 	</event>
 </eventList>

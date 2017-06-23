@@ -115,7 +115,7 @@ Special:
 </ship>
 
 <ship name="PIRATE_SLAVER" auto_blueprint="SHIPS_PIRATE">  <!-- NEEDS ELITE TAG -->
-	<surrender chance="0.4" min="2" max="4">
+	<surrender chance="0.5" min="2" max="4">
 		<text>We surrender! Take one of our slaves as tribute; if you destroy us they'll all die anyway!</text>
 		<choice>
 			<text>Accept their offer.</text>
@@ -1283,11 +1283,11 @@ Special:
 
 <ship name="ZOLTAN_SHIP_SAVE_MANTIS1" auto_blueprint="SHIPS_ZOLTAN">
 	<destroyed>
-		<text>The Mantis are so grateful that they only take two thirds of the loot, leaving the rest for you. How civilized.</text>
+		<text>The Mantis are so grateful that they only take three quarters of the loot, leaving the rest for you. How civilized.</text>
 		<autoReward level="LOW">standard</autoReward>
 	</destroyed>
 	<deadCrew>
-		<text>The Mantis are so grateful that they only take two thirds of the loot, leaving the rest for you. How civilized.</text>
+		<text>The Mantis are so grateful that they only take three quarters of the loot, leaving the rest for you. How civilized.</text>
 		<autoReward level="MED">standard</autoReward>
 	</deadCrew>
 </ship>

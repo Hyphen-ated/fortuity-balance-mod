@@ -137,8 +137,7 @@
 	<event load="ITEMS"/>
 </eventList>
 
-<eventList name="NEUTRAL_EXIT">
-	<event load="DONOR_PONY"/>
+<eventList name="NEUTRAL_EXIT">  
 	<event load="PIRATE_CIVILIAN"/>
 	<event load="REBEL_TRANSPORT"/>
 	<event load="AUTO_REFUEL_STATION"/>
@@ -146,6 +145,7 @@
 	<event load="FRIENDLY_SLAVER"/>
 	<event load="PIRATE_BRIBER"/>
 	<event load="AUTO_DEFENSE_ITEM"/> 
+	<event load="DONOR_PONY"/>
 	<event load="DONOR_PLAGUE"/>
 	
 	<event load="TRADER_UPGRADES"/> <!--DLC - down below-->
@@ -282,7 +282,6 @@
 	<text>TIP: Shield Piercing -  Missiles ignore shields. Use missiles to damage a powerful ship's Shields System. Just remember that Defense Drones can shoot down missiles!</text>
 	<text>TIP: Choices -  Results of most choices have multiple outcomes. You can never be sure what will happen.</text>
 	<text>TIP: Autofire -  Autofire will let a weapon maintain its target. Just keep an eye on your missile count!</text>
-		<text>TIP: Puzzle Answers -  Most puzzle answers from here on will be made of words instead of random letters and numbers!</text>
 	<text>TIP: Evasion -  Evading enemy shots is crucial, but it requires functioning engines AND a pilot. Having someone man the engines will increase your evasion as well.</text>
 	<text>TIP: Sensors -  If the ship goes dark, don't panic. Just fix the Sensors Subsystem.</text>
 	<text>TIP: Drones -  If you're struggling against enemy drones, target the Drone System to temporarily disable them.</text>
@@ -460,7 +459,7 @@
 		<event>
 			<crewMember amount="1"/>
 			<item_modify>
-				<item type="scrap" min="-40" max="-20"/>
+				<item type="scrap" min="-36" max="-21"/>
 			</item_modify>
 		</event>
 	</choice>
@@ -469,7 +468,7 @@
 		<event>
 			<crewMember amount="1"/>
 			<item_modify>
-				<item type="scrap" min="-45" max="-25"/>
+				<item type="scrap" min="-39" max="-24"/>
 			</item_modify>
 		</event>
 	</choice>
@@ -559,7 +558,7 @@
 			<event>
 				<text>You let their team on board and after a short time they finish their work.</text>
 				<item_modify>
-					<item type="scrap" min="-17" max="-10"/>
+					<item type="scrap" min="-16" max="-9"/>
 				</item_modify>
 				<upgrade amount="1" system="oxygen"/>
 			</event>
@@ -569,7 +568,7 @@
 			<event>
 				<text>You let their team on board and after a short time they finish their work.</text>
 				<item_modify>
-					<item type="scrap" min="-23" max="-17"/>
+					<item type="scrap" min="-22" max="-14"/>
 				</item_modify>
 				<upgrade amount="1" system="oxygen"/>
 			</event>
@@ -604,7 +603,7 @@
 			<event>
 				<text>You let their team on board and after a short time they finish their work.</text>
 				<item_modify>
-					<item type="scrap" min="-28" max="-18"/>
+					<item type="scrap" min="-32" max="-21"/>
 				</item_modify>
 				<upgrade amount="1" system="pilot"/>
 			</event>
@@ -639,7 +638,7 @@
 			<event>
 				<text>You let their team on board and after a short time they finish their work.</text>
 				<item_modify>
-					<item type="scrap" min="-32" max="-24"/>
+					<item type="scrap" min="-33" max="-24"/>
 				</item_modify>
 				<upgrade amount="1" system="doors"/>
 			</event>
@@ -664,7 +663,7 @@
 			<event>
 				<text>You let their team on board and after a short time they finish their work.</text>
 				<item_modify>
-					<item type="scrap" min="-17" max="-10"/>
+					<item type="scrap" min="-18" max="-10"/>
 				</item_modify>
 				<upgrade amount="1" system="sensors"/>
 			</event>
@@ -674,7 +673,7 @@
 			<event>
 				<text>You let their team on board and after a short time they finish their work.</text>
 				<item_modify>
-					<item type="scrap" min="-21" max="-13"/>
+					<item type="scrap" min="-21" max="-12"/>
 				</item_modify>
 				<upgrade amount="1" system="sensors"/>
 			</event>
@@ -694,17 +693,17 @@
 	</event>
 	<event>
 		<text>They offer to upgrade your reactor in exchange for some scrap.</text>
-		<choice req="reactor" max_lvl="14" max_group="0"   blue="false">
+		<choice req="reactor" max_lvl="9" max_group="0"   blue="false">
 			<text>Agree to the exchange.</text>
 			<event>
 				<text>You let their team on board and after a short time they finish their work.</text>
 				<item_modify>
-					<item type="scrap" min="-17" max="-10"/>
+					<item type="scrap" min="-15" max="-10"/>
 				</item_modify>
 				<upgrade amount="1" system="reactor"/>
 			</event>
 		</choice>
-		<choice req="reactor" max_lvl="19" max_group="0"   blue="false">
+		<choice req="reactor" max_lvl="14" max_group="0"   blue="false">
 			<text>Agree to the exchange.</text>
 			<event>
 				<text>You let their team on board and after a short time they finish their work.</text>

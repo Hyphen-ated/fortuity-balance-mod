@@ -975,10 +975,10 @@ Overwritten player ships!
 <shipBlueprint name="PLAYER_SHIP_HARD_3" layout="kestral_3" img="kestral_3">
 	<class>Kestrel Cruiser</class>
 	<name>The Swallow</name>
-	<desc>This model was modified by pirates to utilize newly discovered technology. It can clone lost crewmembers and stun enemies.</desc>
+	<desc>This model was modified by pirates and is quick to escape when a fight goes sour.</desc>
 	<unlock>Get to Sector 8 with the Kestrel Cruiser Type B and Advanced Mode enabled to unlock this ship.</unlock>
 	<systemList>
-		<pilot power="1" room="11" start="true" img="room_pilot"> 
+		<pilot power="2" room="11" start="true" img="room_pilot"> 
 			<slot>
 				<direction>right</direction>
 				<number>0</number> 
@@ -990,7 +990,7 @@ Overwritten player ships!
 				<number>1</number> 
 			</slot>
 		</doors>
-		<sensors power="2" room="13" start="true" img="room_sensors">
+		<sensors power="1" room="13" start="true" img="room_sensors">
 			<slot>
 				<direction>down</direction>
 				<number>1</number> 
@@ -1013,8 +1013,8 @@ Overwritten player ships!
 				<number>2</number> 
 			</slot>
 		</shields>
-		<engines power="2" room="5" start="true" img="room_engines"/>
-		<weapons power="2" room="2" start="true" img="room_weapons_2"/>
+		<engines power="4" room="5" start="true" img="room_engines"/>
+		<weapons power="3" room="2" start="true" img="room_weapons_2"/>
 		<drones power="2" room="6" start="false" img="room_drones_13"/>  <!-- F-->
 		<teleporter power="1" room="4"	start="false"/>  <!-- F-->
 		<cloaking power="1" room="1" start="false" img="room_cloaking_3"/>  <!-- F-->
@@ -1029,17 +1029,18 @@ Overwritten player ships!
 	</systemList>
 	<weaponSlots>4</weaponSlots>
 	<droneSlots>2</droneSlots>
-	<weaponList count="2" missiles="4">
-		<weapon name="LASER_BURST_2"/>
-		<weapon name="ION_STUN"/>
+	<weaponList count="2" missiles="16">
+		<weapon name="LASER_HULL_1"/>
+		<weapon name="BOMB_BREACH_1"/>
 	</weaponList>
-	<droneList count="0" drones="3">
+	<droneList count="0" drones="2">
 	</droneList>
 	<health amount="30"/>
-	<maxPower amount ="7"/> 
-	<crewCount amount = "1" class="human"/>
+	<maxPower amount ="9"/> 
 	<crewCount amount = "1" class="anaerobic"/>
 	<crewCount amount = "1" class="human"/>
+	<crewCount amount = "1" class="slug"/>
+	<aug name="FTL_BOOSTER"/>
 	<shieldImage>kestral</shieldImage>
 	<cloakImage>kestral</cloakImage>
 	<floorImage>kestral</floorImage>

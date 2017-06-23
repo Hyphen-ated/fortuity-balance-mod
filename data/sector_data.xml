@@ -160,7 +160,7 @@ CIVILIAN SECTORS
 	<event name="STORE_ENGI" min="2" max="3"/>
 	<event name="ITEMS" min="2" max="2"/>
 	<event name="NOTHING_ENGI" min="1" max="2"/>
-	<event name="ITEMS_ENGI" min="2" max="3"/>
+	<event name="ITEMS_ENGI" min="2" max="2"/>
 	<event name="DISTRESS_BEACON_ENGI" min="1" max="3"/>
 	<event name="QUESTS_ENGI" min="1" max="1"/>
 	<event name="NEUTRAL_ENGI" min="4" max="6"/>
@@ -189,7 +189,7 @@ CIVILIAN SECTORS
 	<event name="STORE_ENGI" min="2" max="3"/>
 	<event name="ITEMS" min="2" max="2"/>
 	<event name="NOTHING_ENGI" min="1" max="2"/>
-	<event name="ITEMS_ENGI" min="2" max="3"/>
+	<event name="ITEMS_ENGI" min="2" max="2"/>
 	<event name="DISTRESS_BEACON_ENGI" min="1" max="3"/>
 	<event name="QUESTS_ENGI" min="1" max="1"/>
 	<event name="NEUTRAL_ENGI" min="5" max="7"/>
@@ -227,7 +227,7 @@ CIVILIAN SECTORS
 	<event name="NEUTRAL_ZOLTAN" min="5" max="6"/>
 </sectorDescrption>
 
-<sectorDescription name="♫☁" minSector="2" unique="true">  
+<sectorDescription name="ZOLTAN_HOME" minSector="2" unique="true">  
 	<nameList>
 		<name>Zoltan Homeworlds</name>
 	</nameList>
@@ -243,13 +243,14 @@ CIVILIAN SECTORS
 		<blueprint name="rock" rarity="3"/>
 		<blueprint name="human" rarity="2"/>
 	</rarityList>
-	<startEvent>ZOLTAN_PEACE_QUEST</startEvent>
+	<startEvent>START_BEACON_ZOLTAN</startEvent>
 	<event name="ZOLTAN_CREW_STUDY" min="1" max="1"/>
-	<event name="STORE_ZOLTAN" min="1" max="1"/>
-	<event name="HOSTILE_ZOLTAN" min="3" max="3"/>
-	<event name="DISTRESS_BEACON_ZOLTAN" min="1" max="1"/>
-	<event name="NOTHING_ZOLTAN" min="100" max="100"/>
+	<event name="ZOLTAN_PEACE_QUEST" min="1" max="1"/>
+	<event name="STORE_ZOLTAN" min="2" max="2"/>
+	<event name="NOTHING_ZOLTAN" min="1" max="2"/>
+	<event name="DISTRESS_BEACON_ZOLTAN" min="1" max="2"/>
 	<event name="NEBULA_ZOLTAN" min="2" max="6"/>
+	<event name="HOSTILE_ZOLTAN" min="6" max="8"/>
 	<event name="BOARDERS_ZOLTAN" min="1" max="2"/>
 	<event name="ITEM_ZOLTAN" min="1" max="2"/>
 	<event name="QUESTS_ZOLTAN" min="0" max="1"/>
@@ -272,6 +273,9 @@ HOSTILE SECTORS
 		<track>lostship</track>
 		<track>hacking</track>
 	</trackList>
+	<rarityList>
+		<blueprint name="engi" rarity="3"/>
+	</rarityList>
 	<startEvent>START_BEACON_PIRATE</startEvent>
 	<event name="STORE_PIRATE" min="1" max="2"/>
 	<event name="ITEMS" min="1" max="2"/>
@@ -296,6 +300,9 @@ HOSTILE SECTORS
 		<track>lostship</track>
 		<track>hacking</track>
 	</trackList>
+	<rarityList>
+		<blueprint name="engi" rarity="3"/>
+	</rarityList>
 	<startEvent>START_BEACON_REBEL</startEvent>
 	<event name="STORE_REBEL" min="1" max="2"/>
 	<event name="ITEMS" min="1" max="2"/>
@@ -318,6 +325,9 @@ HOSTILE SECTORS
 		<track>hacking</track>
 		<track>lostship</track>
 	</trackList>
+	<rarityList>
+		<blueprint name="engi" rarity="3"/>
+	</rarityList>
 	<startEvent>START_BEACON_REBEL</startEvent>
 	<event name="FLAGSHIP_CONSTRUCTION" min="1" max="1"/>
 	<event name="STORE_REBEL" min="1" max="2"/>
@@ -639,6 +649,18 @@ HIDDEN SECTORS
 		<blueprint name="CRYSTAL_BURST_2" rarity="4"/>
 		<blueprint name="CRYSTAL_HEAVY_1" rarity="2"/>
 		<blueprint name="CRYSTAL_HEAVY_2" rarity="5"/>
+		<blueprint name="BOMB_HEAL_SYSTEM" rarity="0"/>
+		<blueprint name="SHOTGUN" rarity="0"/>
+		<blueprint name="SHOTGUN_2" rarity="0"/>
+		<blueprint name="MISSILE_CHARGEGUN" rarity="0"/>
+		<blueprint name="LASER_CHAINGUN" rarity="0"/>
+		<blueprint name="LASER_CHAINGUN_2" rarity="0"/>
+		<blueprint name="ION_CHAINGUN" rarity="0"/>
+		<blueprint name="LASER_CHARGEGUN" rarity="0"/>
+		<blueprint name="LASER_CHARGEGUN_2" rarity="0"/>
+		<blueprint name="ION_CHARGEGUN" rarity="0"/>
+		<blueprint name="ION_STUN" rarity="0"/>
+		<blueprint name="BOMB_STUN" rarity="0"/>		
 	</rarityList>
 	<startEvent>START_BEACON_CRYSTAL</startEvent>
 	<event name="STORE_CRYSTAL" min="2" max="3"/>

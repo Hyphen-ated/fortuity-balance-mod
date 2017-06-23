@@ -104,13 +104,13 @@ Special
 	<store/>
 </event>
 <textList name="STORE_CRYSTAL">
-	<text>You arrive in an area bustling with crystalline ships and stations. A merchant quickly messages you, "You're from the outside, no? This is a great opportunity for both of us! Do you have anything you wish to sell or trade?"</text>
-	<text>"Ah! Hello aliens", says a rotund crystalline being on the vid screen. "I hoped I would run into one of you. I am a collector of alien artifacts and hoped you would have some equipment to barter!"</text>
+	<text>You arrive in an area bustling with Crystalline ships and stations. A merchant quickly messages you, "You're from the outside, no? This is a great opportunity for both of us! Do you have anything you wish to sell or trade?"</text>
+	<text>"Ah! Hello aliens", says a rotund Crystalline being on the vid screen. "I hoped I would run into one of you. I am a collector of alien artifacts and hoped you would have some equipment to barter!"</text>
 	<text>You arrive at a trade depot and find a store that is willing to open communications with you. "I can't say I've traded with your kind before, but perhaps we could work out some sort of exchange."</text>
 	<text>You receive an incoming transmission, but it seems badly garbled. Eventually you realize it's advertising an equipment store. "Apologies," says the vendor, when you finally get him on the vid screen, "Long time since use universal translator no necessary. Please, buy, buy!"</text>
 	
-	<text>You arrive in an area bustling with crystalline ships and stations. A merchant quickly messages you, "You're from the outside, no? This is a great opportunity for both of us! Do you have anything you wish to sell or trade?"</text>
-	<text>"Ah! Hello aliens", says a rotund crystalline being on the vid screen. "I hoped I would run into one of you. I am a collector of alien artifacts and hoped you would have some equipment to barter!"</text>
+	<text>You arrive in an area bustling with Crystalline ships and stations. A merchant quickly messages you, "You're from the outside, no? This is a great opportunity for both of us! Do you have anything you wish to sell or trade?"</text>
+	<text>"Ah! Hello aliens", says a rotund Crystalline being on the vid screen. "I hoped I would run into one of you. I am a collector of alien artifacts and hoped you would have some equipment to barter!"</text>
 	<text>You arrive at a trade depot and find a store that is willing to open communications with you. "I can't say I've traded with your kind before, but perhaps we could work out so sort of exchange?"</text>
 	<text>You receive an incoming transmission, but it seems badly garbled. Eventually you realize it's advertising an equipment store. "Apologies," says the vendor, when you finally get him on the vid screen, "Long time since use universal translator necessary. Please, buy, buy!"</text>
 </textList>
@@ -242,11 +242,11 @@ Special
 <event name="CRYSTAL_SCRAP_EXCITED" unique="true">
 	<text>You receive a signal from a private relay on a nearby inhabited planet. "Are you the alien ship they've been talking about?! You are! Please, I am a collector of alien artifacts, I'm sure what is scrap to you is priceless to me."</text>
 	<choice hidden="true">
-		<text>Offer 35 scrap.</text>
+		<text>Offer 25 scrap.</text>
 		<event>
 			<text>"My word! Is this... a 25th century Rockman thrust stabilizer?! What do you want for it? Wait, I have a better proposal. I long to see the galaxy. I propose I come with you. What do you say?"</text>
 			<item_modify>    
-				<item type="scrap" min="-35" max="-35"/>
+				<item type="scrap" min="-25" max="-25"/>
 			</item_modify>	
 			<choice hidden="true">
 				<text>Accept.</text>
@@ -333,7 +333,7 @@ Special
 ------------>
 
 <event name="CRYSTAL_REBEL_CRYSTAL" unique="false">
-	<text>Crystal shards fly past the screen as soon as you arrive. Checking the scanners, it looks like a crystalline ship is engaged with a Rebel!</text>
+	<text>Crystal shards fly past the screen as soon as you arrive. Checking the scanners, it looks like a Crystalline ship is engaged with a Rebel!</text>
 	<choice hidden="true">
 		<text>Attack the Rebel.</text>
 		<event>
@@ -580,7 +580,7 @@ Special
 </event>
 <eventList name="CRYSTAL_CHATTY_LIST">
 	<event>
-		<text>You speak at length about nothing particularly interesting. "Wow, thanks. Oh look, another alien ship! I wonder if they're as nice as you." Seeing the Rebel decals you doubt they're friendly. They spot you and move in to attack, while the Crystalline civilian jumps away.</text>
+		<text>You speak at length about nothing particularly interesting. "Wow, thanks! Oh look, another alien ship! I wonder if they're as nice as you." Seeing the Rebel decals you doubt they're friendly. They spot you and move in to attack, while the Crystalline civilian jumps away.</text>
 		<ship load="REBEL" hostile="true"/>
 	</event>
 	<event>

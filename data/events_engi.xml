@@ -196,7 +196,7 @@ Idea - make an event where you're fighting to save an engi ship but theres manti
 		<text>Secure the cache.</text>
 		<event>
 			<text>You have the Engi complete their excavations and bring the supplies onboard.</text>
-			<autoReward level="MED">drone</autoReward>
+			<autoReward level="LOW">drone</autoReward>
 		</event>
 	</choice>
 </event>
@@ -237,7 +237,7 @@ Idea - make an event where you're fighting to save an engi ship but theres manti
 		<text>Accept their offer of surrender.</text>
 		<event>
 			<text>The Engi obediently transfer over the goods and get on their way. Money for nothing.</text>
-			<autoReward level="RANDOM">standard</autoReward>
+			<autoReward level="MED">standard</autoReward>
 		</event>
 	</choice>
 </event>
@@ -375,11 +375,11 @@ Idea - make an event where you're fighting to save an engi ship but theres manti
 <event name="DISTRESS_ENGI_REBEL_RESULT">
 	<text>The Engi vessel turns out to be very poorly equipped - barely a runabout, really. They're trying to outrun the Rebels, and need all the help they can get.</text>
 	<choice hidden="true">
-		<text>Give them 20 scrap.</text>
+		<text>Give them 15 scrap.</text>
 		<event load="DISTRESS_ENGI_REBEL_LIST1"/>
 	</choice>
 	<choice hidden="true">
-		<text>Give them 30 scrap, 2 missiles and 2 fuel.</text>
+		<text>Give them 25 scrap, 2 missiles and 2 fuel.</text>
 		<event load="DISTRESS_ENGI_REBEL_LIST2"/>
 	</choice>
 	<choice hidden="true">
@@ -393,28 +393,35 @@ Idea - make an event where you're fighting to save an engi ship but theres manti
 	<event>
 		<text>The words they use are "Need = fulfilled", but you take it for gratitude. They take the next jump in their long journey home.</text>
 		<item_modify>
-			<item type="scrap" min="-20" max="-20"/>
+			<item type="scrap" min="-15" max="-15"/>
 		</item_modify>
 	</event>
 	<event>
 		<text>The Engi are grateful. They don't have any supplies or weapons to spare, but they do send over a self-teleporting med-bot disperser they hope they won't need.</text>
 		<weapon name="BOMB_HEAL"/>
 		<item_modify>
-			<item type="scrap" min="-20" max="-20"/>
+			<item type="scrap" min="-15" max="-15"/>
+		</item_modify>
+	</event>
+	<event>
+		<text>The Engi are grateful. They don't have any supplies or weapons to spare, but they do send over a self-teleporting nano-bot disperser they hope they won't need.</text>
+		<weapon name="BOMB_HEAL_SYSTEM"/>
+		<item_modify>
+			<item type="scrap" min="-15" max="-15"/>
 		</item_modify>
 	</event>
 	<event>
 		<text>The Engi are grateful. They don't have much by way of supplies but they do offer a drone schematic for your use.</text>
 		<drone name="RANDOM"/>
 		<item_modify>
-			<item type="scrap" min="-20" max="-20"/>
+			<item type="scrap" min="-15" max="-15"/>
 		</item_modify>
 	</event>
 </eventList>
 <event name="DISTRESS_ENGI_REBEL_LIST2">
 	<text>They wouldn't get more than a few jumps with that load-out. You provide them with all the munitions and supplies they should need for the journey home. "Generosity magnitude unpredicted. Well-being syntax error [value too high]. Accept this token."</text>
 	<item_modify>
-		<item type="scrap" min="-30" max="-30"/>
+		<item type="scrap" min="-25" max="-25"/>
 		<item type="fuel" min="-2" max="-2"/>
 		<item type="missiles" min="-2" max ="-2"/>
 	</item_modify>

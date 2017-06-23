@@ -159,12 +159,29 @@ item - scrap + that thing  -->
 </event>
 
 <event name="STALEMATE_SURRENDER">
-	<text>The ship suddenly disables their weapons. There's no explanation and they don't respond to hails. It seems during the battle they lost some fuel cells from their storage. You quickly collect it and leave.</text>
-	<item_modify>
-		<item type="fuel" min="2" max="2"/>
-	</item_modify>
-	<ship hostile="false"/>
+	<text>The ship suddenly disables their weapons. There's no explanation and they don't respond to hails. It seems during the battle they lost some fuel cells from their storage. Continue the engagement?</text>
+	<choice>
+		<text>Keep fighting - we can still take them out.</text> 
+		<event/>
+	</choice>
+	<choice>
+		<text>Quickly collect the fuel and leave.</text> 
+		<event>
+			<text>You grab the fuel and leave without further incident.</text>
+				<item_modify>
+					<item type="fuel" min="2" max="2"/>
+				</item_modify>
+				<ship hostile="false"/>
+		</event>
+	</choice>
 </event>
+
+
+
+
+
+
+
 
 <event name="BOSS_STALEMATE">
 	<text>The ship jumped away without warning, you prepare to pursue.</text>
@@ -429,6 +446,13 @@ item - scrap + that thing  -->
 	<text load="MERCENARY"/>
 	<ship load="PIRATE" hostile="false"/>
 	<choice>
+		<text>Fight the ship.</text>
+		<event>
+			<text>Mercenaries are worse than Rebels. The only honorable course is to engage the mercenary in battle.</text>
+			<ship hostile="true"/>
+		</event>
+	</choice>
+	<choice>
 		<text>Hire the mercenary to delay the Rebels.</text>
 		<event>
 			<text>The mercenary ship masks its jump signature to mimic your own and then jumps off in the opposite direction. This should keep the Rebels guessing.</text>
@@ -446,13 +470,6 @@ item - scrap + that thing  -->
 				<item type="scrap" min="-16" max="-8"/>
 			</item_modify>
 			<reveal_map/>
-		</event>
-	</choice>
-	<choice>
-		<text>Fight the ship.</text>
-		<event>
-			<text>Mercenaries are worse than Rebels. The only honorable course is to engage the mercenary in battle.</text>
-			<ship hostile="true"/>
 		</event>
 	</choice>
 	<choice>
@@ -1015,7 +1032,7 @@ item - scrap + that thing  -->
 		<choice req="BOMB_HEAL"> <!--DLC!-->
 			<text>(Healing Burst) Use a healing bomb to keep them alive.</text>
 			<event>
-				<text>You launch a healing bomb into their ship and the Nanobots are able to keep the crew stabilized. Once they come to, you send over some supplies to keep them healty enough to get to friendly territory.</text>
+				<text>You launch a healing bomb into their ship and the Nanobots are able to keep the crew stabilized. Once they come to, you send over some supplies to keep them healthy enough to get to friendly territory.</text>
 				<item_modify>
 					<item type="missiles" min="-1" max="-1"/>
 				</item_modify>
@@ -1730,7 +1747,7 @@ item - scrap + that thing  -->
 		<event>
 			<item_modify>
 				<item type="fuel" min="-6" max="-3"/>
-				<item type="drones" min="2" max ="5"/>
+				<item type="drones" min="3" max ="6"/>
 			</item_modify>
 		</event>
 	</choice>
@@ -1746,7 +1763,7 @@ item - scrap + that thing  -->
 </textList>
 
 <event name="REFUEL_STATION" unique="true">   <!-- NEED - checks to see if you have enough scrap!-->
-	<text>A ship refueling station is stationed at this beacon. We can purchase fuel here.</text>
+	<text>A ship refueling station is located at this beacon. We can purchase fuel here.</text>
 	<choice hidden="false">
 		<text>Buy 6 fuel for 12 scrap.</text>
 		<event>
@@ -2097,7 +2114,7 @@ item - scrap + that thing  -->
 
 <event name="MERCHANT_REQUEST" unique="true">
 	<img planet="PLANET_POPULATED_SMALL"/>
-	<text>You arrive at a populated sector. One merchant seems to be mass-broadcasting a request for a mercenary ship to aid him. Shall we respond?</text>
+	<text>You arrive at a populated beacon. One merchant seems to be mass-broadcasting a request for a mercenary ship to aid him. Shall we respond?</text>
 	<choice hidden="true">
 		<text>Yes.</text>
 		<event load="MERCHANT_REQUEST_LIST"/>
@@ -2739,7 +2756,7 @@ item - scrap + that thing  -->
 		<text>Accept their offer.</text>
 		<event>
 			<ship hostile="false"/>
-			<autoReward level="RANDOM">scrap</autoReward>
+			<autoReward level="RANDOM">stuff</autoReward>
 		</event>
 	</choice>
 	<choice>
@@ -2757,7 +2774,7 @@ item - scrap + that thing  -->
 	<text>They offer to give you some of their goods if you don't destroy their ship.</text>
 	<text>You get a frantic message, "Take everything we have! Just don't kill us."</text>
 	<text>"You have clearly bested us. We merely request our lives."</text>
-	<text>"You have made your point, we are beaten. Take these and leave us to our shame."</text>
+	<text>"You have made your point, we are beaten. Take this and leave us to our shame."</text>
 	<text>"Take everything we have and let's both forget this happened."</text>
 	<!-- Duplicates below, just to make sure-->
 	<text>"Alright, you win! Here's some equipment from our stores, leave us alone!"</text>
@@ -2770,7 +2787,7 @@ item - scrap + that thing  -->
 	<text>They offer to give you some of their goods if you don't destroy their ship.</text>
 	<text>You get a frantic message, "Take everything we have! Just don't kill us."</text>
 	<text>"You have clearly bested us. We merely request our lives."</text>
-	<text>"You have made your point, we are beaten. Take these and leave us to our shame."</text>
+	<text>"You have made your point, we are beaten. Take this and leave us to our shame."</text>
 	<text>"Take everything we have and let's both forget this happened."</text>
 </textList>
 	
@@ -2828,7 +2845,7 @@ item - scrap + that thing  -->
 		<autoReward level="LOW">scrap_only</autoReward>
 	</event>
 	<event>
-		<text>You find a weapon system on their ship. With no crew to stop you, you can install it on your own.</text>
+		<text>You find an intact weapon on their ship. With no crew to stop you, you can install it on your own.</text>
 		<autoReward level="LOW">weapon</autoReward>
 	</event>
 </eventList>
@@ -3033,7 +3050,7 @@ item - scrap + that thing  -->
 			<autoReward level="LOW">stuff</autoReward>
 		</event>
 	</choice>
-	<choice hidden="false" req="STASIS_POD">
+	<choice hidden="true" req="STASIS_POD">
 		<text>(Damaged Stasis Pod) Ask if they can fix this.</text>
 		<event>
 			<text>"Interesting. I've never seen a cryogenic system like this. It appears to still be functioning..." They hook it up to their system and run a number of tests on it.</text>
@@ -3240,7 +3257,7 @@ item - scrap + that thing  -->
 </event>
 <eventList name="DONOR_PONY_PEACE">
 	<event>
-		<text>None of your attempts to communicate seem to work: they just stare at you silently. As you prepare to leave, one of the creatures gallops forward and forcefully nudges you away from the ship. He seems to want you to follow him. Eventually, they guide you to an old Engi ship's crash site. Inside you are able to find and reactivate an Engi!</text>
+		<text>None of your attempts to communicate seem to work: they just stare at you silently. As you prepare to leave, one of the creatures canters forward and forcefully nudges you away from the ship. He seems to want you to follow him. Eventually, they guide you to an old Engi ship's crash site. Inside you are able to find and reactivate an Engi!</text>
 		<crewMember amount="1" class="engi"/>
 		<autoReward level="LOW">standard</autoReward>
 	</event>
